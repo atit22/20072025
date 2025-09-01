@@ -1,0 +1,29 @@
+name: sample
+on:
+  push:
+    branches:
+      - main
+      - releases/*
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-22.04
+    steps: 
+    - name: Azure Login
+      uses: Azure/login@v2.3.0
+      with:
+           
+        client-id: 67568fed-c19d-4e95-8777-2712d0b8c71e
+        tenant-id: 749c1dd0-8da4-446d-987c-6deb1b6cbab9
+        subscription-id: 879e262b-becf-4bea-a163-835b023ba8e0
+        enable-AzPSSession: true
+        environment: azurecloud
+        auth-type: SERVICE_PRINCIPAL
+    - name: HashiCorp - Setup Terraform
+      uses: hashicorp/setup-terraform@v2.0.3
+      with:
+        terraform_version: latest
+
+
+                   
+    
