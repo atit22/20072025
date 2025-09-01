@@ -24,7 +24,7 @@ jobs:
         subscription-id: 879e262b-becf-4bea-a163-835b023ba8e0
         enable-AzPSSession: true
         environment: azurecloud
-        auth-type: SERVICE_PRINCIPAL
+        auth-type: id-token
     - name: HashiCorp - Setup Terraform
       uses: hashicorp/setup-terraform@v2.0.3
       with:
