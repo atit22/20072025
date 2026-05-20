@@ -31,10 +31,13 @@ jobs:
         terraform_version: latest
     - name: terraform init
       run: terraform init
+      working-directory: ./parent
     - name: terraform fmt
       run : terraform fmt
+      working-directory: ./parent
     - name: terraform plan
       run: terraform plan
+      working-directory: ./parent
 
                    
     
