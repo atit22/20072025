@@ -19,9 +19,9 @@ jobs:
       uses: Azure/login@v2.3.0
       with:
            
-        client-id: 67568fed-c19d-4e95-8777-2712d0b8c71e
-        tenant-id: 749c1dd0-8da4-446d-987c-6deb1b6cbab9
-        subscription-id: 879e262b-becf-4bea-a163-835b023ba8e0
+        client-id: e8b48fab-a267-4787-8581-a861d93d22d7
+        tenant-id: bf1ea6d6-1a42-4fc7-b801-aaddf0e26bfe
+        subscription-id: 50d7f43f-63cc-4cf6-8829-1542e9da33ea
         enable-AzPSSession: true
         environment: azurecloud
         auth-type: id-token
